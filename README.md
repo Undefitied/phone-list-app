@@ -12,4 +12,4 @@
 * exercise one, about mock server, I've got an idea to mock it faster with simple .json file in public folder, so I did it
 * description about components and containers is not fully matched, because I saw some optimized way and changed the structure
 * about styles, I've used Material UI, because I work with it on my current project and it was the fastest way for me to make app little more decent
-* would be glad to get any questions about my choices or the changes I've made to the requirements
+* would be glad to answer any questions about my choices or the changes I've made to the requirements
