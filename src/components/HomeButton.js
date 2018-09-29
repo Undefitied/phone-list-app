@@ -7,6 +7,7 @@ export default () => (
     component={Link}
     to="/"
     color="primary"
+    data-cy="home-button"
   >
     Back Home
   </Button>

@@ -19,7 +19,7 @@ import rootReducer from './reducers'
 
 import './index.css'
 
-const logger = createLogger();
+const logger = createLogger()
 
 const store = createStore(
   rootReducer,
@@ -28,15 +28,16 @@ const store = createStore(
     thunk,
     logger,
   )
-);
+)
 
 ReactDOM.render(
   <Provider store={store}>
     <Router>
       <Switch>
+        <Route exact path="/404" component={NotFound} />
+
         <Route exact path="/" component={PhonesListContainer} />
         <Route exact path="/:phoneId" component={PhoneDetailContainer} />
-        <Route component={NotFound} />
       </Switch>
     </Router>
   </Provider>,

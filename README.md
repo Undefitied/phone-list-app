@@ -8,6 +8,13 @@
 4. run `npm start` and wait for server to be started
 5. navigate to `http://localhost:3000` in browser
 
+## Unit Tests
+1. run `npm run test`
+
+## e2e Tests
+0. Be sure that you started the server from "Quick start" section
+1. run `npm run cypress`
+
 ### Notes for reviewers
 * exercise one, about mock server, I've got an idea to mock it faster with simple .json file in public folder, so I did it
 * description about components and containers is not fully matched, because I saw some optimized way and changed the structure

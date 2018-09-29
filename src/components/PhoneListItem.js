@@ -8,15 +8,21 @@ import PhoneDetails from './PhoneDetails'
 const PhoneListItem = ({ item }) => {
 
   return (
-    <div className="phone-list-item">
+    <div data-cy="phone-list-item">
       <Grid container spacing={16} style={{position: 'relative'}}>
         <Link
+          data-cy="phone-list-link"
           to={`/${item.id}`}
           style={{ width: '100%', height: '100%', position: 'absolute', top: 0, left: 0, zIndex: 3 }}
         />
 
-        <Grid item xs={3} style={{ textAlign: 'center' }} className="phone-list-item-image">
-          <img src={item.image} alt={item.title} style={{ height: 150 }}/>
+        <Grid item xs={3} style={{ textAlign: 'center' }}>
+          <img
+            data-cy="phone-list-item-img"
+            src={item.image}
+            alt={item.title}
+            style={{ maxHeight: 150 }}
+          />
         </Grid>
 
         <Grid item xs={9}>
